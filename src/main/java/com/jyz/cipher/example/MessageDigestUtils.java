@@ -3,8 +3,17 @@ package com.jyz.cipher.example;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/**
+ * MD5加解密工具类,md5是32位加密，不可逆
+ */
 public class MessageDigestUtils {
 
+    /**
+     * md5加密
+     * @param content 加密内容
+     * @return 密文
+     * @throws NoSuchAlgorithmException
+     */
     public static String encrypt(String content) throws NoSuchAlgorithmException {
         MessageDigest md5 = MessageDigest.getInstance("MD5");
         md5.update(content.getBytes());

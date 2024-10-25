@@ -5,6 +5,10 @@ import org.bouncycastle.crypto.macs.HMac;
 import org.bouncycastle.crypto.params.KeyParameter;
 import org.bouncycastle.util.encoders.Hex;
 
+/**
+ * @description: SM3加密工具类,消息摘要算法，32位，有秘钥和无秘钥两种加密方式
+ * @author jyz
+ */
 public class SM3Utils {
 
     public static String encrypt(String content){

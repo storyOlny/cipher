@@ -11,7 +11,10 @@ import java.security.Key;
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 
-
+/**
+ * SM4加密工具
+ * @author jyz
+ */
 public class SM4Util {
 
     public static String encryptEcb(String content, String secretKey) throws NoSuchPaddingException, NoSuchAlgorithmException, NoSuchProviderException, InvalidKeyException, IllegalBlockSizeException, BadPaddingException {

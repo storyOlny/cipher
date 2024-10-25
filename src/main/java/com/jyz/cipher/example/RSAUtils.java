@@ -10,6 +10,9 @@ import java.security.*;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
+/**
+ * RSA加密解密,公钥加密，私钥解密，非对称加密
+ */
 public class RSAUtils {
 
     /**
